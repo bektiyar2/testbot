@@ -7,7 +7,7 @@ def forward_message(update, context):
     message = update.message
     if message.text:
         text = message.text.lower()
-    if 'заявка' in text:
+    if '# слово или кобинация слов' in text:
     # Переадресация сообщения в другую группу
 	    context.bot.forward_message(chat_id=destination_group_id, from_chat_id=update.effective_chat.id, message_id=update.message.message_id)
 
