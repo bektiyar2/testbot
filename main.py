@@ -3,7 +3,7 @@ from telegram.ext import Updater, MessageHandler, Filters
 # Функция-обработчик для переадресации сообщений
 def forward_message(update, context):
     # ID группы, в которую будут переадресовываться сообщения
-    destination_group_id = () #указать ID группы, в которую будет переадресация сообщения
+    destination_group_id = (-1002650951724) #указать ID группы, в которую будет переадресация сообщения
     message = update.message
     if message.text:
         text = message.text.lower()
@@ -16,7 +16,7 @@ def error(update, context):
     print(f"Ошибка: {context.error}")
 
 # Создаем экземпляр класса Updater и передаем ему токен вашего бота
-updater = Updater(token='номер токена', use_context=True)
+updater = Updater(token='7705828331:AAES0Sp5mAFYQA11qinCmdZcraMgvRgI1nY', use_context=True)
 
 # Получаем экземпляр диспетчера, чтобы зарегистрировать обработчики
 dispatcher = updater.dispatcher
